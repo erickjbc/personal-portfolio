@@ -1,6 +1,6 @@
 # Personal Portfolio Project
 
-**Description:** This project was created as a task from the Full Stack Developer Path on Codecadem.com by Erick Bonilla. It includes an example website made from scrath without using templates to show off some projects that have been developed during the learning course.
+**Description:** This project was created as a task from the Full Stack Developer Path on Codecadem.com by Erick Bonilla. It includes an example website made from scratch without using templates to show off some projects that have been developed during the learning course.
 
 **Date:** This project was started on February 4, 2022.
 
