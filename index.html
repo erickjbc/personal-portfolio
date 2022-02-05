@@ -3,18 +3,26 @@
     <head>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/reset.css">
-        <script src="./js/main.js" type="javascript"></script>
+        <script type="text/javascript" src="./js/main.js" defer></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
-            <h1>Erick Javier Bonilla Cader</h1>
-            <h2>Junior Developer</h2>
-            <img src="">
+            <div id="title">
+                <h1>Erick Javier Bonilla Cader</h1>
+                <h2>Junior Developer</h2>
+            </div>
+            <div>
+                <img src="./assets/face-dots.jpg" id="profile">
+            </div>
             <ul>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="menu-item" id="projects-menu"><a href="#">Projects</a></li>
+                <li class="menu-item" id="skills-menu"><a href="#">Skills</a></li>
+                <li class="menu-item" id="tools-menu"><a href="#">Tools</a></li>
+                <li class="menu-item" id="contact-menu"><a href="#">Contact</a></li>
             </ul>
             <div id="credits">
                 <h3>Copyright 2022, Erick Bonilla Cader</h3>
@@ -22,24 +30,78 @@
         </nav>
         <main>
             <section id="projects">
-                <h2>Projects</h2>
-                <div id="projects-content"></div>
+                <div id="projects-heading" class="section-heading">
+                <h2>Projects</h2>   
+                <span class="material-icons" id="project-toogle">expand_less</span> 
+                </div>
+                
+                <div id="projects-content">
+                    <div class="project-card">
+                        <h3>Project Name</h3>
+                        <p>Description of project</p>
+                        <!-- <img src="#" alt="project image"><br> -->
+                        <a class="b1" href="#">Visit Repo</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Name</h3>
+                        <p>Description of project</p>
+                        <!-- <img src="#" alt="project image"><br> -->
+                        <a class="b1" href="#">Visit Repo</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Name</h3>
+                        <p>Description of project</p>
+                        <!-- <img src="#" alt="project image"><br> -->
+                        <a class="b1" href="#">Visit Repo</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Project Name</h3>
+                        <p>Description of project</p>
+                        <!-- <img src="#" alt="project image"><br> -->
+                        <a class="b1" href="#">Visit Repo</a>
+                    </div>
+                </div>
             </section>
 
             <section id="skills">
-                <h2>Skills</h2>
-                <div id="skills-content"></div>
+                <div id="skills-heading" class="section-heading">
+                    <h2>Skills</h2>   
+                    <span class="material-icons" id="skills-toogle">expand_less</span> 
+                    </div>
+                <div id="skills-content">
+                    <div class="skill-item">
+                        <span class="material-icons">html</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="material-icons">css</span>
+                    </div>
+                    <div class="skill-item">
+                        <span class="material-icons">javascript</span>
+                    </div>
+                    <div class="skill-item">
+                        <span id="react">React/JSX</span>
+                    </div>
+                    <!-- <div class="skill-item">
+                        <span class="material-icons">javascript</span>
+                    </div> -->
+                </div>
                 
             </section>
 
             <section id="tools">
-                <h2>Tools</h2>
+                <div id="tools-heading" class="section-heading">
+                    <h2>Tools</h2>   
+                    <span class="material-icons" id="tools-toogle">expand_less</span> 
+                </div>
                 <div id="tools-content"></div>
                 
             </section>
-            
+
             <section id="contact">
-                <h2>Contact</h2>
+                <div id="contact-heading" class="section-heading">
+                    <h2>Contact</h2>   
+                    <span class="material-icons" id="contact-toogle">expand_less</span> 
+                </div>
                 <div id="contact-content"></div>
                 
             </section>

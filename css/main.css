@@ -1,5 +1,6 @@
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    font-family: 'Ubuntu Mono', Courier, monospace;
 }
 
 html {
@@ -17,12 +18,179 @@ body {
 nav {
     color: white;
     background-color: #2727E6;
-    /* width: 35%; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 35%;
 }
 
 main {
-    flex-grow: 2;
-
+    /* flex-grow: 2; */
+    display: flex;
+    flex-direction: column;
+    width: 65%;
 }
 
+/* Global Styles */
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    border-top: 3px solid #2727E6;
+    border-bottom: 3px solid #2727E6;
+    cursor: pointer;
+}
+
+.section-heading:hover {
+    background-color: #2727E6;
+    color: white;
+}
+
+.b1 {
+    background-color: #2727E6;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    margin: 5px 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.b1:hover {
+    background-color: white;
+    color: #2727E6;
+    font-weight: 600;
+}
+
+/* Navigation Section */
+
+#title {
+    flex-grow: 1;
+    margin: 50px 0px;
+}
+
+#title h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#title h2 {
+    font-size: 16px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: white;
+    line-height: 3;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav ul {
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
+}
+
+nav li {
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+li.menu-item:hover {
+    background-color: white;
+    color: #2727E6;
+}
+
+li.menu-item:hover > a {
+    color: #2727E6;
+}
+
+#profile {
+    height: 225px;
+    width: auto;
+    border-radius: 500px;
+}
+
+
+#credits {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 50px;
+}
+
+#credits h3 {
+    font-weight: 200;
+    font-size: 15px;
+}
+
+/* Projects Section */
+
+#projects-heading {
+    border-top: none;
+}
+
+#projects-content {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    min-height: 40vh;
+    align-items: center;
+}
+
+.project-card h3 {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+.project-card p {
+    margin: 10px 0px;
+}
+
+.project-card img {
+    margin: 10px 0px;
+    height: 200px;
+    width: auto;
+}
+
+/* Skills Section */
+
+#skills-content {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    gap: 5%;
+    align-items: center;
+}
+
+#skills-content span {
+    font-size: 50px;
+}
+
+span#react {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Tools Section */
+
+#tools-content {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    gap: 5%;
+    align-items: center;
+}
