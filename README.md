@@ -14,3 +14,5 @@
 
 - The javascript code could be more efficient, there are opportunities to make it better.
 - No projects are assigned to the website yet, it should be updated on the future.
+- The hiding action of different content could have an animation.
+- The hiding action of different content could be done with different clasess to create a transition. 
