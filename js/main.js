@@ -91,5 +91,8 @@ tlMenu.onclick = function() {toolsToogle()};
 ctHead.onclick = function() {contactToogle()};
 ctMenu.onclick = function() {contactToogle()};
 
-
+projectToogle();
+skillsToogle();
+toolsToogle();
+contactToogle();
 

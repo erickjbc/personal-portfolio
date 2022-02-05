@@ -232,6 +232,8 @@ span#react {
 
     nav {
         width: 100%;
+        align-self: flex-start;
+        min-height: 20vh;
     }
 
     main {
