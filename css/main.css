@@ -12,24 +12,26 @@ html {
 body {
     display: flex;
     align-items: stretch;
-    height: 100%;
+    /* height: 100%; */
 }
 
 nav {
     color: white;
     background-color: #2727E6;
-    /* flex-grow: 1; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 35%;
+    min-width: 300px;
+    align-self: stretch;
+    min-height: 100vh;
 }
 
 main {
-    /* flex-grow: 2; */
     display: flex;
     flex-direction: column;
     width: 65%;
+    align-self: stretch;
 }
 
 /* Global Styles */
@@ -55,9 +57,11 @@ main {
     color: white;
     text-transform: uppercase;
     padding: 5px 10px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     border: none;
     font-size: 14px;
+    text-decoration: none;
+    box-sizing:content-box;
 }
 
 .b1:hover {
@@ -70,7 +74,8 @@ main {
 
 #title {
     flex-grow: 1;
-    margin: 50px 0px;
+    margin: 50px auto;
+    width: 90%;
 }
 
 #title h1 {
@@ -118,7 +123,7 @@ li.menu-item:hover > a {
 }
 
 #profile {
-    height: 225px;
+    height: 150px;
     width: auto;
     border-radius: 500px;
 }
@@ -149,6 +154,9 @@ li.menu-item:hover > a {
     gap: 3%;
     min-height: 40vh;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
 .project-card h3 {
@@ -157,7 +165,7 @@ li.menu-item:hover > a {
 }
 
 .project-card p {
-    margin: 10px 0px;
+    margin: 10px 0px 15px 0px;
 }
 
 .project-card img {
@@ -174,6 +182,9 @@ li.menu-item:hover > a {
     min-height: 20vh;
     gap: 5%;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
 }
 
 #skills-content span {
@@ -193,4 +204,49 @@ span#react {
     min-height: 20vh;
     gap: 5%;
     align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+
+/* Contact Section */
+
+#contact-content {
+    display: flex;
+    justify-content: center;
+    min-height: 20vh;
+    gap: 5%;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 800px) {
+    body {
+        display: block;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    div#credits {
+        margin: 30px auto;
+    }
+
+    #profile {
+        height: 100px;
+    }
 }
