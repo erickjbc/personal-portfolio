@@ -251,4 +251,8 @@ span#react {
     #profile {
         height: 100px;
     }
+
+    #projects-content {
+        padding: 20px 0px;
+    }
 }
