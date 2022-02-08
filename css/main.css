@@ -234,6 +234,7 @@ span#react {
         width: 100%;
         align-self: flex-start;
         min-height: 20vh;
+        min-width: 0px;
     }
 
     main {
@@ -254,5 +255,13 @@ span#react {
 
     #projects-content {
         padding: 20px 0px;
+    }
+
+    .project-card {
+        padding-bottom: 20px;
+    }
+
+    #credits {
+        padding: 10px 10px;
     }
 }
